@@ -10,7 +10,7 @@ PROJECT_DIR = os.path.split(os.path.dirname(__file__))[0]
 SITE_DIRS = {
         'progmail': os.path.join(
             os.path.split(PROJECT_DIR)[0],
-            'progressivemail/progmail'),
+            'progmail'),
         'jotter': os.path.join(
             os.path.split(PROJECT_DIR)[0],
             'jotter'),
