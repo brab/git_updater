@@ -19,7 +19,10 @@ def update(request, site):
             executable='/bin/bash')
 
     # Touch the wsgi file to restart the process
-    os.utime(site_path + '/apache/django.wsgi', None)
+    try:
+        os.utime(site_path + '/apache/django.wsgi', None)
+    except:
+        pass
 
     return direct_to_template(request, 'update.html', {
         'site': site,
