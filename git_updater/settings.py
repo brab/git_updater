@@ -14,6 +14,9 @@ SITE_DIRS = {
         'jotter': os.path.join(
             os.path.split(PROJECT_DIR)[0],
             'jotter'),
+        'progmail-corp': os.path.join(
+            os.path.split(PROJECT_DIR)[0],
+            'progmail_corporate'),
         }
 
 ADMINS = (
